@@ -1,1 +1,1 @@
-Mi readme
+En este repositorio está destinado a prácticas de la materia Frontend I de la carrera Certified Tech Developer de Digital House certificada por Mercado Libre y Globant. Dichas prácticas se encuentran en las distintas ramas existentes.
