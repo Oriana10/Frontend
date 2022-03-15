@@ -4,4 +4,4 @@ Este repositorio está destinado a prácticas de la materia Frontend I de la car
 
 Se accede a las ramas mediante este botón:
 
-![boton-locacion-ramas](https://user-images.githubusercontent.com/81116683/158305190-21b1267f-6ab9-44bc-8005-5f4be4843eb5.jpeg)
+![botón-locacion-ramas](https://user-images.githubusercontent.com/81116683/158305538-a4e29783-7020-495f-9e0d-6b54aef11d85.jpeg)
