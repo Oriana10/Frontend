@@ -1,1 +1,1 @@
-Mi readme
+Práctica uso de radial-gradient, íconos y fuentes externas.

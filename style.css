@@ -6,8 +6,7 @@ body {
 
 header {
     text-align: center;
-    background: linear-gradient(90deg, rgb(252, 194, 226) 0%, rgb(246, 236, 229) 100%);
-
+    background: radial-gradient(circle, #fcc2e2 2%, #f6ece5);
 }
 
 #cv-pdf {
