@@ -1,1 +1,1 @@
-Mi readme
+Práctica introductoria a CSS. Implemento selectores class, id, de etiqueta, descendentes y combinados. También uso de fuente tipográfica externa, colores hexadecimales, rgb y por nombre.
