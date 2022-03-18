@@ -1,1 +1,1 @@
-Mi readme
+Práctica de clase de repaso donde creo un HTML de una app de petshop.
