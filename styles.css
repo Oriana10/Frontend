@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+body {
+  background-color:  #f7f6f8;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header .discountContainer {
+  background: #1CD1B0;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  height: 30px;
+  width: 100%;
+}
+
+header .discountContainer p {
+  color: #000000;
+  padding-left: 10px;
+}
+
+header .headingContainer {
+  background: #00669F;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+header .headingContainer p {
+  color: #000000;
+  font-size: 40px;
+  padding-left: 60px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article .card {
+  position: relative;
+  top: 20px;
+  width: 300px;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+article .profilePicture {
+  position: absolute;
+  top: 130px;
+  border-radius: 50%;
+}
+
+article .description {
+  padding: 20px;
+  text-align: center;
+}
+
+article button {
+  background-color: #00669F;
+  color: #F3F3F3;
+  width: 128px;
+  height: 48px;
+  border: none;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+footer{
+  bottom: 0;
+  width: 100%;
+  background-color: #00669F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  padding-left: 10px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
