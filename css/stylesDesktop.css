@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@400;700&display=swap');
 
 * {
-    font-family: 'Roboto', sans-serif;
+    padding: 0;
     margin: 0;
-}
+    box-sizing: border-box;
+    font-family: var(--fuente-principal)
+  }
+  
+  :root {
+    --color-primario: #f0a83e;
+    --color-secundario: #3c2313;
+    --color-terciario: #8a8787;
+    --color-cuartenario: #ffff;
+    --color-quinto: #000;
+    --color-sexto: #AB9C9C;
+    --padding-gral: 12px 10px 10px 5px;
+    --imagen-principal: url("");
+    --fuente-principal: "Roboto", sans-serif;
+  }
 
 header .barra-superior {
     background-color: #222222;
@@ -44,25 +58,27 @@ header nav {
 header nav .logo {
     height: 30px;
     width: auto;
-    margin-left: 20px;
 }
 
-header nav section {
+header nav .enlaces {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
 }
 
-header nav section img {
-    height: 20px;
-    width: auto;
+header nav .enlaces .enlace {
+    display: flex;
+    justify-content: space-evenly; /*NO ME TOMA EL SPACE BIEN*/
+    align-items: center;
 }
 
-header nav section p {
-    color: aliceblue;
-    margin: 0 10px;
+header nav .enlaces .enlace p {
+    color: var();
     text-transform: capitalize;
+}
+
+header nav .menu {
+    visibility: hidden;
 }
 
 main .banner {
@@ -71,7 +87,12 @@ main .banner {
     align-items: center;
 }
 
-main .banner img {
+
+main .banner .imagenPrincipalMobile {
+    display: none;
+}
+
+main .banner .imagenPrincipalDesktop {
     height: auto;
     width: 100%;
 }
@@ -88,11 +109,14 @@ main .banner div p {
 }
 
 main .banner div p.titulo {
-    font-size: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 4rem var(--color-secundario);
 }
 
 main .banner div p.subtitulo {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 main .banner div button {
@@ -110,25 +134,28 @@ main .banner div button {
 main .seccion-productos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-main .seccion-productos img {
-    margin: 25px;
-}
+    text-transform: capitalize;
+    margin: 4rem;
+  }
 
 main .seccion-productos h1 {
-    text-transform: capitalize;
-    font-size: 50px;
-}
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  }
 
-main .seccion-productos p {
+  main .seccion-productos .texto {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /*NO ME TOMA EL SPACE BET*/
     align-items: center;
-}
+  }
 
+  main .seccion-productos .texto p {
+    text-transform: capitalize;
+    color: var(--color-terciario); 
+  }
 
 main .productos {
     display: flex;
@@ -165,23 +192,26 @@ main .seccion-contacto {
 main .seccion-contacto h3 {
     text-transform: capitalize;
     margin: 20px;
-    font-size: 30px;
+    font-size: 2.5rem;
+    color: var(--color-secundario);
 }
 
 main .seccion-contacto .inputs div {
     margin: 20px;
     background-color: #3C2313;
-    border-radius: 15px;
+    border-radius: 2rem;
+    width: 340px;
     height: 40px;
-    width: 380px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 main .seccion-contacto .inputs div {
-    color: #FFFFFF;
-    padding-left: 20px;
+    color: var(--color-cuartenario);
+    font-size: small;
+    font-weight: 100;
+    padding-left: 3rem;
     text-transform: capitalize;
 }
 
@@ -195,9 +225,10 @@ main .seccion-contacto .botones-contenedor button {
     border: none;
     margin: 20px;
     border-radius: 15px;
-    height: 40px;
-    width: 90px;
+    width: 110px;
+    height: 34px;
     text-transform: capitalize;
+    color: var(--color-cuartenario);
 }
 
 main .seccion-contacto .botones-contenedor button.resetear {
@@ -221,19 +252,22 @@ main .barra-inferior .publicidad-subscripcion {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin: 3rem;
 }
 
 main .barra-inferior .publicidad-subscripcion p {
     margin-left: 10px;
     text-transform: capitalize;
+    font-weight: bold;
+    font-size: large;
+    color: var(--color-cuartenario);
 }
 
 main .barra-inferior .subscripcion {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin: 3rem;
 }
 
 main .barra-inferior .subscripcion div {
@@ -244,6 +278,7 @@ main .barra-inferior .subscripcion div {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin: 1rem;
 }
 
 main .barra-inferior .subscripcion div p {
@@ -258,6 +293,7 @@ main .barra-inferior .subscripcion button {
     background-color: #3C2313;
     border-radius: 15px;
     height: 38px;
+    width: 7rem;
     text-transform: capitalize;
     color: #FFFFFF;
 }
@@ -269,30 +305,40 @@ footer {
     align-items: center;
 }
 
-footer section div {
+footer .informacion .item {
     display: flex;
     align-items: center;
-    margin: 20px 50px;
-}
-
-footer section div p {
-    color: #f3f3f3;
+    margin: 2rem 8rem;
     text-transform: capitalize;
-    padding-left: 20px;
 }
 
-footer .logo img {
+footer .informacion .item .texto {
+    padding-left: 1.5rem;
+}
+
+footer .informacion .item h3 {
+    color: var(--color-cuartenario);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+footer .informacion .item p {
+    color: var(--color-sexto);
+    font-size: small;
+}
+
+footer .logo {
     color: #f3f3f3;
-    margin-right: 50px;
+    margin-right: 10rem;
 }
 
 section .barra-inferior {
-    background-color: #222222;
-    color: #f3f3f3;
+    background-color: var(--color-quinto);
+    color: var(--color-cuartenario);
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
     font-size: small;
+    padding: 0.5rem;
 }
-
