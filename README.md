@@ -1,1 +1,1 @@
-Práctica de clase de repaso donde creo un HTML de una app de petshop.
+Práctica de formulario de contacto: se hace uso de distintos tipos de inputs, labels, select con options, entre otros. Se añaden estilos y diseño adaptativo. 
