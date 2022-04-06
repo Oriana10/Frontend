@@ -1,1 +1,1 @@
-Práctica de clase de repaso donde creo un HTML de una app de petshop.
+Práctica de diseño adaptativo para celulares-tablets y pantallas grandes, haciendo uso de la medida relativa rem y media querys desde el HTML.
