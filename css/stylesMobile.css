@@ -169,42 +169,42 @@
     text-transform: capitalize;
   }
 
-  main .seccion-contacto .inputs {
-   margin: 2rem;
-  }
+main form .contenedor-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin: 1rem;
+}
 
-  main .seccion-contacto .inputs div {
-    background-color: var(--color-secundario);
-    width: 35rem;
-    height: 4rem;
-    margin: 1rem;
-    border-radius: 1.5rem;
-    display: flex;
-    align-items: center;
-  }
+main form .contenedor-inputs label {
+  color: var(--color-secundario);
+  font-weight: bold;
+}
 
-  main .seccion-contacto .inputs div p {
-    color: var(--color-sexto);
-    text-transform: capitalize;
-    font-size: small;
-    margin-left: 2rem;
-  }
+main form .contenedor-detalle textarea {
+  resize: none;
+}
 
-  main .seccion-contacto .botones-contenedor button {
-    border: none;
-    border-radius: 2rem;
-    height: 8vh;
-    width: 30vw;
-    text-transform: capitalize;
-  }
+main form .botones {
+  display: flex;
+  justify-content: center;
+}
 
-  main .seccion-contacto .botones-contenedor .resetear {
-    background-color: var(--color-terciario);
-  }
+main form .botones button {
+  color: var(--color-cuartenario);
+  border-radius: 5px;
+  width: 15vw;
+  height: 7vh;
+  margin: 2rem;
+}
 
-  main .seccion-contacto .botones-contenedor .enviar {
-    background-color: var(--color-primario);
-  }
+main form .botones .reset {
+  background-color: var(--color-terciario);
+}
+
+main form .botones .enviar {
+  background-color: var(--color-primario);
+}
   
   main .barra-inferior {
     background-color: var(--color-primario);

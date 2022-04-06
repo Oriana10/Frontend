@@ -50,9 +50,13 @@ header nav {
     height: 60px;
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 5px 10px 18px #888888;
+}
+
+header nav .logo, .enlaces {
+    margin: 2rem;
 }
 
 header nav .logo {
@@ -68,17 +72,22 @@ header nav .enlaces {
 
 header nav .enlaces .enlace {
     display: flex;
-    justify-content: space-evenly; /*NO ME TOMA EL SPACE BIEN*/
-    align-items: center;
+    margin: 0.5rem;
+}
+
+header nav .enlaces .enlace img {
+    height: 20px;
+    width: auto;
 }
 
 header nav .enlaces .enlace p {
     color: var();
     text-transform: capitalize;
+    margin: 0.2rem;
 }
 
 header nav .menu {
-    visibility: hidden;
+    display: none;
 }
 
 main .banner {
@@ -86,7 +95,6 @@ main .banner {
     justify-content: flex-end;
     align-items: center;
 }
-
 
 main .banner .imagenPrincipalMobile {
     display: none;
@@ -136,26 +144,23 @@ main .seccion-productos {
     flex-direction: column;
     align-items: center;
     text-transform: capitalize;
-    margin: 4rem;
+    margin: 3rem;
   }
 
 main .seccion-productos h1 {
     font-size: 3rem;
     font-weight: bold;
-    text-align: center;
-    margin: 2rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
   }
 
-  main .seccion-productos .texto {
+main .seccion-productos .texto {
     display: flex;
-    justify-content: space-between; /*NO ME TOMA EL SPACE BET*/
-    align-items: center;
-  }
+    justify-content: space-evenly; /*no toma space-evently ni ningun otro no se por que*/
+}
 
-  main .seccion-productos .texto p {
-    text-transform: capitalize;
+main .seccion-productos .texto p {
     color: var(--color-terciario); 
-  }
+}
 
 main .productos {
     display: flex;
@@ -180,38 +185,6 @@ main .productos article p.titulo {
 
 main .productos article p.precio {
     color: #F0A83E;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-main .seccion-contacto {
-    margin: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main .seccion-contacto h3 {
-    text-transform: capitalize;
-    margin: 20px;
-    font-size: 2.5rem;
-    color: var(--color-secundario);
 }
 
 main .seccion-contacto .inputs div {
@@ -256,11 +229,9 @@ main .seccion-contacto .botones-contenedor button.resetear {
 main .seccion-contacto .botones-contenedor button.enviar {
     background-color: #F0A83E;
 }
-*/
 
-
-main .formulario {
-    display: block;
+main .seccion-contacto {
+    margin: 3rem;
 }
 
 main .seccion-contacto h3 {
@@ -271,31 +242,63 @@ main .seccion-contacto h3 {
     text-align: center;
 }
 
-main .formulario .nombre-y-apellido, .mail-y-telefono, .asunto-y-detalle, .reserva-y-file, .botones {
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main form .sections-form {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+main form .sections-form .contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem 4rem;
+}
 
+main form .sections-form .contenedor-inputs label {
+    font-weight: bold;
+    color: var(--color-secundario);
+}       
 
+main form .asunto-y-detalle {
+    display: flex;
+    flex-direction: column;
+}
 
+main form .contenedor-detalle textarea {
+    resize: none;
+}
 
+main form .contenedor-nombre, .contenedor-apellido, .contenedor-mail, .contenedor-telefono, .contenedor-reserva {
+    width: 20vw;
+}
 
+main form .contenedor-asunto, .contenedor-detalle {
+    width: 50vw;
+}
 
+main form .botones button {
+    color: var(--color-cuartenario);
+    border-radius: 5px;
+    width: 10vw;
+    height: 7vh;
+    margin: 2rem;
+}
 
+main form .botones .reset {
+    background-color: var(--color-terciario);
+}
 
-
-
-
-
-
-
-
-
-
-
-
+main form .botones .enviar {
+    background-color: var(--color-primario);
+}
 
 main .barra-inferior {
     background-color: #F0A83E;

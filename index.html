@@ -88,79 +88,61 @@
     <section class="seccion-contacto">
       <h3>contáctanos</h3>
 
-      <!--<div class="inputs">
-          <div>
-            <p>nombre y apellido</p>
-          </div>
-          <div>
-            <p>ingresa tu correo electronico</p>
-          </div>
-          <div>
-            <p>teléfono</p>
-          </div>
-        </div>-->
+      <form action="#" method="get">
 
-      <form class="formulario" action="#" method="get">
-
-        <div class="nombre-y-apellido">
-          <div class="contenedor nombre">
+        <section class="nombre-y-apellido sections-form">
+          <div class="contenedor-nombre contenedor-inputs">
             <label for="fnombre">Nombre</label>
             <input type="text" name="nombre" id="fnombre" required>
           </div>
-          <div class="contenedor apellido">
+          <div class="contenedor-apellido contenedor-inputs">
             <label for="fapellido">Apellido</label>
             <input type="text" name="apellido" id="fapellido" required>
           </div>
-        </div>
+        </section>
 
-        <div class="mail-y-telefono">
-          <div class="contenedor mail">
-            <label for="fmain">Mail</label>
-            <input type="main" name="mail" id="fmail">
+        <section class="mail-y-telefono sections-form">
+          <div class="contenedor-mail contenedor-inputs">
+            <label for="fmail">Mail</label>
+            <input type="mail" name="mail" id="fmail">
           </div>
-          <div class="contenedor telefono">
+          <div class="contenedor-telefono contenedor-inputs">
             <label for="ftelefono">Telefono</label>
             <input type="tel" name="telefono" id="ftelefono">
           </div>
-        </div>
+        </section>
 
-        <div class="asunto-y-detalle">
-          <label for="fasunto">Asunto</label>
-          <select name="asunto" id="fasunto" required>
-            <option value="Precio">Precio</option>
-            <option value="Turnos">Turnos</option>
-            <option value="Atencion">Atencion</option>
-            <option value="Otro">Otro</option>
-          </select>
-          <div class="contenedor detalle">
-            <label for="fdetalle"></label>
+        <section class="asunto-y-detalle sections-form">
+          <div class="contenedor-asunto contenedor-inputs">
+            <label for="fasunto">Asunto</label>
+            <select name="asunto" id="fasunto" required>
+              <option value="Precio">Precio</option>
+              <option value="Turnos">Turnos</option>
+              <option value="Atencion">Atencion</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="contenedor-detalle contenedor-inputs">
+            <label for="fdetalle">Detalle</label>
             <textarea name="detalle-consulta" cols="50" rows="5" is=fdetalle" required></textarea>
           </div>
-        </div>
+        </section>
 
-        <div class="reserva-y-file">
-          <div class="contenedor reserva">
+        <section class="reserva-y-file sections-form">
+          <div class=" contenedor-reserva contenedor-inputs">
             <label for="freserva">Dia de Reserva</label>
             <input type="date" name="reserva" id="freserva" min="2022-04-01">
           </div>
-          <div class="contenedor file">
+          <div class="contenedor-archivo contenedor-inputs">
             <label for="ffoto-mascota">Foto de Mascota</label>
             <input type="file" name="foto-mascota" id="ffoto-mascota" accept=".jpg .png .pdf" mukltiple>
           </div>
-        </div>
-        <!--multiple para mas de un file-->
+        </section>
 
-        <div class="contenedor valoracion">
-          <label for="fvaloracion">Valoracion del Servicio</label>
-          <input type="radio" name="valoracion" id="fvaloracion" value="Buena">Buena
-          <input type="radio" name="valoracion" id="fvaloracion" value="Regular">Regular
-          <input type="radio" name="valoracion" id="fvaloracion" value="Mala">Mala
-        </div>
-        
-        <div class="botones">
-          <button type="reset">Resetear</button>
-          <button type="submit">Enviar</button>
-        </div>
+          <section class="botones">
+            <button class="reset" type="reset">Resetear</button>
+            <button class="enviar" type="submit">Enviar</button>
+          </section>
 
       </form>
 
@@ -227,134 +209,3 @@
 </body>
 
 </html>
-
-<!--
-  <body>
-    <header>
-      <div class="barra-superior">
-        <p>Grandes ofertas en comederos</p>
-        <section>
-          <p>Español</p>
-          <p>ARG$</p>
-        </section>
-      </div>
-
-      <nav>
-        <img class="logo" src="img/Logo.png" alt="logo" />
-        <section>
-          <img src="img/header/pawprint-chico 1.png" alt="huellita de perro" />
-          <p>categorias</p>
-          <img src="img/header/pawprint-chico 1.png" alt="huellita de perro" />
-          <p>pets</p>
-          <img src="img/header/pawprint-chico 1.png" alt="huellita de perro" />
-          <p>nosotros</p>
-          <img src="img/header/pawprint-chico 1.png" alt="huellita de perro" />
-          <p>contactanos</p>
-        </section>
-      </nav>
-    </header>
-
-    <main>
-      <section class="banner">
-        <img
-          src="img/main/bowl-and-pet-daities-on-green-background 1.png"
-          alt="plato comida de perros"
-        />
-        <div>
-          <p class="titulo">¡es un places tenerte aquí!</p>
-          <p class="subtitulo">¡comederos en descuento!</p>
-          <button>comederos</button>
-        </div>
-      </section>
-
-      <section class="seccion-productos">
-        <img src="img/main/pawprint 1.png" alt="" />
-        <h1>productos destacados</h1>
-        <p>comederos - accesorios - comida</p>
-      </section>
-
-      <section class="productos">
-        <article class="churrasquito">
-          <img src="img/main/cards/Churrasquito.png" alt="churrasquito" />
-          <p class="titulo">juguetería churrasquito</p>
-          <p class="precio">$150</p>
-        </article>
-
-        <article class="comedero">
-          <img src="img/main/cards/Comedero.png" alt="comedero" />
-          <p class="titulo">comedero para perro</p>
-          <p class="precio">$250</p>
-        </article>
-
-        <article class="huesito">
-          <img src="img/main/cards/Huesito.png" alt="huesito" />
-          <p class="titulo">juguete huesito</p>
-          <p class="precio">$650</p>
-        </article>
-      </section>
-
-      <section class="seccion-contacto">
-        <h3>contáctanos</h3>
-
-        <div class="inputs">
-          <div>
-            <p>nombre y apellido</p>
-          </div>
-          <div>
-            <p>ingresa tu correo electronico</p>
-          </div>
-          <div>
-            <p>teléfono</p>
-          </div>
-        </div>
-
-        <div class="botones-contenedor">
-          <button class="resetear">resetear</button>
-          <button class="enviar">enviar</button>
-        </div>
-      </section>
-
-      <section class="barra-inferior">
-        <div class="publicidad-subscripcion">
-          <img src="img/main/enviar-correo 1.png" alt="imagen correo" />
-          <p>suscribete para mas novedades</p>
-        </div>
-        <div class="subscripcion">
-          <div>
-            <p>ingresa tu correo electronico</p>
-          </div>
-          <button>suscribirme</button>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <section>
-        <div>
-          <img src="img/footer/Icono-ubicacion.png" alt="icono ubicacion" />
-          <p>calle provincia</p>
-        </div>
-
-        <div>
-          <img src="img/footer/Icono-telefono.png" alt="icono telefono" />
-          <p>numero de telefono</p>
-        </div>
-
-        <div>
-          <img src="img/footer/Icono-mail.png" alt="icono telefono" />
-          <p>direccion de correo</p>
-        </div>
-      </section>
-
-      <div class="logo">
-        <img src="img/Logo.png" alt="logo" />
-      </div>
-    </footer>
-
-    <section>
-      <div class="barra-inferior">
-        <p>todos los derechos reservados</p>
-      </div>
-    </section>
-  </body>
--->
