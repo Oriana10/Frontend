@@ -1,1 +1,0 @@
-Práctica de formulario de contacto: se hace uso de distintos tipos de inputs, labels, select con options, entre otros. Se añaden estilos y diseño adaptativo. 
