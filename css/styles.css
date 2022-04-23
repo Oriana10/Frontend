@@ -2,6 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Comfortaa", cursive;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 header {
@@ -26,30 +31,187 @@ header div ul a {
   font-weight: 0.6rem;
   text-decoration: none;
 }
+header div ul a:hover {
+  color: grey;
+}
 header div .carrito {
   height: auto;
   margin-right: 40px;
   width: 100%;
 }
-header .logo {
+header .a-carrito img {
+  width: fit-content;
+}
+header img {
   margin-left: 40px;
+}
+
+.home {
+  position: relative;
+}
+.home img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.home .texto {
+  align-items: center;
+  display: flex;
+  display: flex;
+  left: 250px;
+  flex-direction: column;
+  font-size: 2.5rem;
+  position: absolute;
+  justify-content: center;
+  top: 100px;
+}
+.home .texto span {
+  color: red;
+}
+.home .texto h1 {
+  color: white;
+}
+.home .texto button {
+  background-color: #D01418;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  height: 60px;
+  width: 220px;
+  margin: 40px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.home .texto button:hover {
+  border-radius: 10px;
+  transition: 1s;
+  background-color: #871012;
+  cursor: pointer;
+}
+
+/***/
+.productos-destacados {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+.productos-destacados .titulo {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 70px 0 50px 0;
+}
+.productos-destacados .juegos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.productos-destacados .juegos .card {
+  background-color: white;
+  border-radius: 10px;
+}
+.productos-destacados .juegos .card img {
+  padding: 30px 60px;
+}
+.productos-destacados .juegos .card .detalles {
+  padding: 20px;
+  border-top: 1px solid rgb(198, 198, 198);
+}
+.productos-destacados .juegos .card .detalles h4 {
+  font-size: 1.5rem;
+}
+.productos-destacados .juegos .card .detalles p {
+  margin: 5px 0;
+}
+.productos-destacados .juegos .card .detalles small {
+  color: greenyellow;
+}
+.productos-destacados .juegos .card:hover {
+  transition: 1s;
+  background-color: rgb(227, 227, 227);
+  box-shadow: 5px 10px 10px rgb(230, 230, 230);
+}
+
+/***/
+.productos-estrellas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding-bottom: 100px;
+}
+.productos-estrellas .titulo {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 70px 0 50px 0;
+}
+.productos-estrellas .cards-estrellas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.productos-estrellas .cards-estrellas .card {
+  position: relative;
+}
+.productos-estrellas .cards-estrellas .card h3 {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 55px;
+  right: 30px;
+}
+.productos-estrellas .cards-estrellas .card img {
+  border-radius: 5px;
+}
+.productos-estrellas .cards-estrellas .card:hover {
+  transition: 1s;
+}
+.productos-estrellas .cards-estrellas .card:hover img {
+  filter: blur(2px);
+  transition: 1s;
+}
+.productos-estrellas .cards-estrellas .card:hover h3 {
+  text-shadow: 4px 4px 2px purple;
+  transition: 1s;
 }
 
 footer {
   align-items: center;
   background-color: black;
-  bottom: 0;
   display: flex;
-  height: 100px;
+  height: 170px;
   justify-content: space-between;
   position: absolute;
   width: 100%;
+}
+footer img {
+  margin-left: 130px;
 }
 footer .redes-sociales {
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 130px;
+}
+footer .redes-sociales span {
+  font-size: 2rem;
+}
+footer .redes-sociales .iconos {
+  display: flex;
+  gap: 37px;
+  margin: 5px;
+  font-size: 2.5rem;
+}
+footer .redes-sociales .iconos .fa-twitter {
+  color: aqua;
+}
+footer .redes-sociales .iconos .fa-facebook-f {
+  color: #1476D0;
+}
+footer .redes-sociales .iconos .fa-instagram {
+  color: #CE0CFF;
 }
 
 /*# sourceMappingURL=styles.css.map */

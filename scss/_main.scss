@@ -1,0 +1,157 @@
+.home {
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .texto {
+        align-items: center;
+        display: flex;
+        display: flex;
+        left: 250px;
+        flex-direction: column;
+        font-size: 2.5rem;
+        position: absolute;
+        justify-content: center;
+        top: 100px;
+
+        span {
+            color: red;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        button {
+            background-color: #D01418;
+            border-radius: 8px;
+            color: white;
+            border: none;
+            height: 60px;
+            width: 220px;
+            margin: 40px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        button:hover {
+            border-radius: 10px;
+            transition: 1s;
+            background-color: #871012;
+            cursor: pointer;
+        }
+    }
+
+}
+
+/***/
+
+.productos-destacados {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+
+    .titulo {
+        text-align: center;
+        font-size: 2.2rem;
+        margin: 70px 0 50px 0;
+    }
+
+    .juegos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+
+            img {
+                padding: 30px 60px;
+            }
+
+            .detalles {
+                padding: 20px;
+                border-top: 1px solid rgb(198, 198, 198);
+
+                h4 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    margin: 5px 0;
+                }
+
+                small {
+                    color: greenyellow;
+                }
+            }
+        }
+
+        .card:hover {
+            transition: 1s;
+            background-color: rgb(227, 227, 227);
+            box-shadow: 5px 10px 10px rgb(230, 230, 230);
+        }
+    }
+}
+
+/***/
+
+.productos-estrellas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f1f1;
+    padding-bottom: 100px;
+
+    .titulo {
+        text-align: center;
+        font-size: 2.2rem;
+        margin: 70px 0 50px 0;
+    }
+
+    .cards-estrellas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+
+        .card {
+            position: relative;
+
+            h3 {
+                font-size: 2rem;
+                color: white;
+                position: absolute;
+                top: 55px;
+                right: 30px;
+            }
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        .card:hover {
+            transition: 1s;
+
+            img {
+                filter: blur(2px);
+                transition: 1s;
+
+            }
+
+            h3 {
+                text-shadow: 4px 4px 2px purple;
+                transition: 1s;
+
+            }
+        }
+    }
+}

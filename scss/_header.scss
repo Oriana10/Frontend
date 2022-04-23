@@ -17,6 +17,9 @@ header {
                 font-weight: 0.6rem;
                 text-decoration: none;
             }
+            a:hover {
+                color: grey;
+            }
         }
         .carrito {
             height: auto;
@@ -24,7 +27,12 @@ header {
             width: 100%;
         }
     }
-    .logo {
+    .a-carrito {
+        img {
+            width: fit-content;
+        }
+    }
+    img {
         margin-left: 40px;
     }
 }
