@@ -1,38 +1,30 @@
+@import "variables";
+
 header {
-    align-items: center;
-    background-color: black;
     display: flex;
     justify-content: space-between;
-    height: 60px;
-    div {
-        align-items: center;
-        display: flex;
-        gap: 30px;
+    align-items: center;
+    margin: 15px 150px 0 100px;
+    .logo {
+        font-weight: 800;
+        font-size: 3rem;
+    }
+    nav {
         ul {
-            display: flex;
             list-style: none;
-            gap: 15px;
-            a {
-                color: white;
-                font-weight: 0.6rem;
-                text-decoration: none;
+            display: flex;
+            gap: 60px;
+            li {
+                a {
+                    text-decoration: none;
+                    color: $color-secondary;
+                    font-weight: bold;
+                }
+                a:hover {
+                    color: $shadow;
+                    transition: 0.5s;
+                }
             }
-            a:hover {
-                color: grey;
-            }
         }
-        .carrito {
-            height: auto;
-            margin-right: 40px;
-            width: 100%;
-        }
-    }
-    .a-carrito {
-        img {
-            width: fit-content;
-        }
-    }
-    img {
-        margin-left: 40px;
     }
 }
