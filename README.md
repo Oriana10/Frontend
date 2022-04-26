@@ -1,4 +1,4 @@
-#Sass
+#Grid
 
-<img width="948" alt="image" src="https://user-images.githubusercontent.com/81116683/164951621-909a57fe-f6b8-41dd-b051-e92ea731c4de.png">
-<img width="947" alt="image" src="https://user-images.githubusercontent.com/81116683/164951630-86cfe0e2-0120-4875-b333-40978da9336b.png">
+<img width="945" alt="image" src="https://user-images.githubusercontent.com/81116683/165401088-03db2f3d-7ed9-45fa-b18a-9b62e703e6c7.png">
+<img width="947" alt="image" src="https://user-images.githubusercontent.com/81116683/165401227-e99c000e-c2c8-448a-9726-5b07b8ef15e0.png">
