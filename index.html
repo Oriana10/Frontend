@@ -3,100 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       src="https://kit.fontawesome.com/c6ab087e83.js"
       crossorigin="anonymous"
     ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>MasterDev</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Instagram</title>
   </head>
 
   <body>
-    <header>
-      <p class="logo">MasterDev</p>
-      <nav>
-        <ul>
-          <li><a href="#">Talent</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="grid-container">
+      <!--   Header    -->
 
-    <main>
-      <section class="home">
-        <div class="text">
-          <div class="home-shadow"></div>
-          <h2>Be Happy, choose quality.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-            recusandae quos doloremque officiis, veniam maiores, quaerat saepe
-            eligendi rem, non qui tenetur error aliquid! Recusandae, sint!
-            Aliquid, quae repudiandae accusantium, magni debitis aliquam, sint
-            asperiores ut eaque voluptatibus suscipit necessitatibus?
-          </p>
-          <div class="buttons">
-            <button class="sing-up" type="submit">Sing Up</button>
-            <button class="sing-in" type="submit">Sing In</button>
-          </div>
+      <header class="item">
+        <h4 class="logo">InstaFront</h4>
+        <div class="buscador">
+          <p>Buscador...</p>
         </div>
-        <img src="images/wireframe.svg" alt="Ilustración Páginas Web" />
-      </section>
-      <section class="features">
-        <div class="item">
-          <div class="number">1</div>
-          <div class="text">
-            <div class="text-shadow"></div>
-            <h3>Find</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              iure voluptatibus ad, eum neque et tempora temporibus vero.
-              Pariatur, minima.
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="number">2</div>
-          <div class="text">
-            <div class="text-shadow"></div>
-            <h3>Message</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              iure voluptatibus ad, eum neque et tempora temporibus vero.
-              Pariatur, minima.
-            </p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="number">3</div>
-          <div class="text">
-            <div class="text-shadow"></div>
-            <h3>Hire!</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              iure voluptatibus ad, eum neque et tempora temporibus vero.
-              Pariatur, minima.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
+        <a class="perfil" href="#"
+          ><img src="images/fotoPerfil.png" alt="Perfil"
+        /></a>
+      </header>
 
-    <footer>
-      <small>© 2022</small>
-      <div class="redes-sociales">
-        <div class="icono"><img src="images/facebook.svg" alt="Facebook" /></div>
-        <div class="icono"><img src="images/instagram.svg" alt="Instagram" /></div>
-        <div class="icono"><img src="images/twitter.svg" alt="Twitter" /></div>
-      </div>
-    </footer>
+      <!--   Main    -->
+
+      <main class="item">
+        <!-- historias  -->
+
+        <div class="historias">
+          <a href="#"
+            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+          /></a>
+          <a href="#"
+            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+          /></a>
+          <a href="#"
+            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+          /></a>
+          <a href="#"
+            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+          /></a>
+          <a href="#"
+            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+          /></a>
+          <a href="#"
+            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+          /></a>
+          <a href="#"
+            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+          /></a>
+        </div>
+
+        <!-- publicacion  -->
+
+        <div class="publicacion">
+          <div class="head">
+            <div class="autor">
+              <a href="#"><img src="images/fotoPerfil.png" alt="Perfil" /></a>
+              <p>Abril Gonzales</p>
+            </div>
+            <i class="fa-solid fa-ellipsis menu"></i>
+          </div>
+
+          <div class="body">
+            <img
+              class="imagen-publicacion"
+              src="images/fotoPublicacion.png"
+              alt="Historia"
+            />
+            <div class="reacciones">
+              <div class="iconos">
+                <a href="#"
+                  ><img src="images/far fa-heart.png" alt="Heart"
+                /></a>
+                <a href="#"
+                  ><img src="images/far fa-comment.png" alt="Comment"
+                /></a>
+                <a href="#"
+                  ><img src="images/far fa-paper-plane.png" alt="Paper plane"
+                /></a>
+                <a href="#"
+                  ><img src="images/far fa-smile.png" alt="Smile"
+                /></a>
+              </div>
+              <div class="me-gustas">
+                <p>Les gusta a lulipringles y otras personas</p>
+              </div>
+              <div class="comentarios">
+                <p class="ver-mas">Ver los 3.645 comentarios</p>
+                <p>
+                  <small>Gabriela Mancini</small> Hola! que placer verte en
+                  frontend!!
+                </p>
+                <p>
+                  <small>Jonathan Gonzales</small> Te estabamos esperando!!!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <aside class="item">
+        <div class="usuario usuario-logueado">
+          <div class="imagen-y-descripcion">
+            <a href="#"><img src="images/fotoPerfil.png" alt="Perfil" /></a>
+            <div class="descripcion">
+              <p class="nombre">Abril.conzales23</p>
+              <p class="nick">abril<i class="fa-solid fa-ghost"></i></p>
+            </div>
+          </div>
+          <a class="accion" href="#">Cambiar</a>
+        </div>
+
+        <div class="sugerencias">
+          <h5>Sugerencias para ti</h5>
+          <div class="usuario">
+            <div class="imagen-y-descripcion">
+              <a href="#"><img src="images/fotoPerfil.png" alt="Perfil" /></a>
+              <p class="nombre">Jonathan Gonzales</p>
+            </div>
+            <a class="accion" href="#">Seguir</a>
+          </div>
+          <div class="usuario">
+            <div class="imagen-y-descripcion">
+              <a href="#"><img src="images/fotoPerfil.png" alt="Perfil" /></a>
+              <p class="nombre">Jonathan Gonzales</p>
+            </div>
+            <a class="accion" href="#">Seguir</a>
+          </div>
+        </div>
+      </aside>
+
+      <!--   Footer    -->
+
+      <footer class="item">
+        <small>Todos los derechos reservados a Oriana Pellegrini</small>
+      </footer>
+    </div>
   </body>
 </html>

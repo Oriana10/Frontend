@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.grid-container {
+  display: grid;
+  background-color: rgb(248, 173, 173);
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 4vw 80vw 2vw;
+  grid-template-areas:
+    "header header header header"
+    "main   main   main   sidebar"
+    "main   main   main   sidebar"
+    "main   main   main   sidebar"
+    "footer footer footer footer";
+}
+
+/****/
+
+.grid-container header {
+  grid-column: 1 / 5;
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 300px;
+}
+
+header .logo {
+  margin-left: 10rem;
+}
+
+header .buscador {
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: 0.5px solid grey;
+  width: 30vw;
+}
+
+header .buscador p {
+  padding: 8px 15px;
+  font-size: 0.6rem;
+}
+
+header .perfil img {
+  margin-right: 5rem;
+  border-radius: 50%;
+  height: 35px;
+}
+
+/****/
+
+.grid-container main {
+  grid-column: 1 / 4;
+  margin: 30px 15px 30px 30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+main .historias {
+  background-color: #ffffff;
+  border: 0.5px solid grey;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 1.2vw;
+  margin-top: 30px;
+  border-radius: 2px;
+  width: 40vw;
+  height: 12vh;
+}
+
+main .historias a img {
+  border-radius: 50%;
+  height: 8vh;
+}
+
+main .publicacion {
+  background-color: #ffffff;
+  border: 0.5px solid grey;
+  display: flex;
+  flex-direction: column;
+  width: 515px;
+}
+
+main .publicacion .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid grey;
+  padding: 10px;
+}
+
+main .publicacion .head .menu {
+  margin-right: 20px;
+}
+
+main .publicacion .head .autor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+main .publicacion .head .autor img {
+  border-radius: 50%;
+}
+
+main .publicacion .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+main .publicacion .body .imagen-publicacion {
+  width: 100%;
+  height: auto;
+}
+
+main .publicacion .body .reacciones {
+  width: 100%;
+  padding: 5px 20px 25px 20px;
+}
+
+main .publicacion .body .reacciones .iconos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+main .publicacion .body .reacciones .iconos a img {
+  height: 2.5vh;
+  margin-bottom: 10px;
+}
+
+main .publicacion .body .comentarios .ver-mas {
+  color: #a1a1a1;
+  line-height: 30px;
+}
+
+main .publicacion .body .comentarios small {
+  font-weight: bold;
+}
+
+/****/
+
+.grid-container aside {
+  grid-column: 4 / 4;
+  margin: 30px 30px 30px 15px;
+  background-color: aliceblue;
+}
+
+aside .usuario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+aside .usuario-logueado {
+  margin: 15px;
+}
+
+aside .usuario-logueado .imagen-y-descripcion img {
+  height: 10vh;
+  border-radius: 50%;
+}
+
+aside .usuario-logueado .imagen-y-descripcion .descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+aside .usuario-logueado .imagen-y-descripcion .descripcion .nick {
+  text-transform: uppercase;
+  color: #a1a1a1;
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+
+aside .imagen-y-descripcion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+aside .imagen-y-descripcion img {
+  border-radius: 50%;
+  height: 6.5vh;
+}
+
+aside .imagen-y-descripcion .nombre {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+aside h5 {
+  color: #808080;
+  padding: 10px 30px;
+}
+
+aside .usuario {
+  padding: 10px 30px;
+}
+
+aside .usuario .accion {
+  text-decoration: none;
+  color: #1ca0f6;
+}
+
+/****/
+
+.grid-container footer {
+  grid-column: 1 / 5;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.5rem;
+}
