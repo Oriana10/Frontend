@@ -43,6 +43,7 @@ header .logo {
 }
 
 header .buscador {
+  display: inline;
   background-color: #ffffff;
   border-radius: 2px;
   border: 0.5px solid grey;
@@ -52,6 +53,10 @@ header .buscador {
 header .buscador p {
   padding: 8px 15px;
   font-size: 0.6rem;
+}
+
+.buscador-icono {
+  display: none;
 }
 
 header .perfil img {
@@ -169,6 +174,10 @@ main .publicacion .body .comentarios small {
   grid-column: 4 / 4;
   margin: 30px 30px 30px 15px;
   background-color: aliceblue;
+}
+
+aside {
+  display: inline;
 }
 
 aside .usuario {

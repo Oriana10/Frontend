@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/c6ab087e83.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- Mobile -->
+    <link
+      rel="stylesheet"
+      href="css/style-mobile.css"
+      media="(min-width:375px)"
+    />
+    <!-- Desktop -->
+    <link
+      rel="stylesheet"
+      href="css/style-desktop.css"
+      media="(min-width:1400px)"
+    />
     <title>Instagram</title>
   </head>
 
@@ -25,9 +38,12 @@
         <div class="buscador">
           <p>Buscador...</p>
         </div>
-        <a class="perfil" href="#"
-          ><img src="images/fotoPerfil.png" alt="Perfil"
-        /></a>
+        <div class="icono-y-perfil">
+          <i class="buscador-icono fa-solid fa-magnifying-glass"></i>
+          <a class="perfil" href="#"
+            ><img src="images/fotoPerfil.png" alt="Perfil"
+          /></a>
+        </div>
       </header>
 
       <!--   Main    -->
@@ -49,13 +65,13 @@
             ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
           /></a>
           <a href="#"
-            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+            ><img class="historia_5" src="images/fotoPerfil.png" alt="Historia"
           /></a>
           <a href="#"
-            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+            ><img class="historia_6" src="images/fotoPerfil.png" alt="Historia"
           /></a>
           <a href="#"
-            ><img class="historia" src="images/fotoPerfil.png" alt="Historia"
+            ><img class="historia_7" src="images/fotoPerfil.png" alt="Historia"
           /></a>
         </div>
 
@@ -108,6 +124,8 @@
           </div>
         </div>
       </main>
+
+      <!--   Aside    -->
 
       <aside class="item">
         <div class="usuario usuario-logueado">
